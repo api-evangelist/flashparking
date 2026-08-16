@@ -1,0 +1,42 @@
+generated: '2026-08-16'
+method: searched
+source: https://www.flashparking.com/pricing/
+docs: https://www.flashparking.com/pricing/
+plan_count: 0
+plans: []
+pricing_models:
+- name: Hardware-as-a-Service (HaaS)
+  price: null
+  currency: null
+  billing_period: monthly
+  note: 'Published as a model, not a price: "little to no upfront cost", fixed monthly
+    payments, term lengths of 3-6 years. No figures disclosed.'
+- name: Transactional
+  price: null
+  currency: null
+  billing_period: monthly
+  note: 'Published as a model, not a price: lowest upfront cost, monthly payments that
+    scale with the business, plus transaction fees. No rates disclosed.'
+- name: One-time payment
+  price: null
+  currency: null
+  billing_period: one-time
+  note: 'Published as a model, not a price: single upfront hardware payment, software
+    modules priced separately. No figures disclosed.'
+api_pricing:
+  published: false
+  note: >-
+    API access is priced separately from the platform and is not published anywhere.
+    The API help-center article states that sandbox environments are provided for
+    testing and certification and that "monthly fees are associated with accessing
+    production APIs", directing readers to sales@flashparking.com for pricing.
+  source: https://help.flashos.com/support/solutions/articles/60001639636-api-integrations-with-flash-parcs-and-flash-valet
+note: >-
+  plan_count is 0 as an honest measurement, not an omission: Flash names three
+  commercial models on its pricing page but publishes no tier names, no prices, no
+  quotas and no overage terms. Every path ends at "Contact Sales" / "Get a Quote".
+evidence:
+- url: https://www.flashparking.com/pricing/
+  status: 200
+- url: https://help.flashos.com/support/solutions/articles/60001639636-api-integrations-with-flash-parcs-and-flash-valet
+  status: 200

@@ -1,0 +1,104 @@
+generated: '2026-08-16'
+method: searched
+source: https://help.flashos.com/support/solutions/60000334952
+docs: https://help.flashos.com/support/solutions/60000334952
+name: Flash Product Release Notes
+scheme: >-
+  Per-product release trains published as dated help-center articles. Server-side
+  products (Digital, Core Platform, Parkonect Cloud) are versioned by deployment DATE
+  on a roughly two-week cadence; installed/on-prem products (Flash PARCS, Flash Valet,
+  Parkonect Firmware) carry four-part dotted version numbers. There is no single
+  platform version and no API-specific changelog - API changes are announced inside
+  the product release notes that contain them.
+current:
+  flash_parcs: 4.0.12.0
+  flash_valet: 4.0.11.12
+  parkonect_firmware: 4.15.00
+  digital: '2026-08-07'
+  core_platform: '2026-08-07'
+trains:
+- name: Flash PARCS Release Notes
+  url: https://help.flashos.com/support/solutions/folders/60000497591
+  versioning: dotted
+- name: Parkonect Release Notes
+  url: https://help.flashos.com/support/solutions/folders/60000511020
+  versioning: date + firmware dotted
+- name: Digital Release Notes
+  url: https://help.flashos.com/support/solutions/folders/60000511018
+  versioning: date
+- name: Flash Valet Release Notes
+  url: https://help.flashos.com/support/solutions/folders/60000511064
+  versioning: dotted
+- name: Vision Release Notes
+  url: https://help.flashos.com/support/solutions/folders/60000511077
+  versioning: date (YY.MM.DD)
+- name: Enforcement Release Notes
+  url: https://help.flashos.com/support/solutions/folders/60000511078
+  versioning: date (YY.MM.DD)
+- name: Platform Release Notes
+  url: https://help.flashos.com/support/solutions/folders/60000511142
+  versioning: date
+entries:
+- version: Flash PARCS 4.0.12.0
+  date: '2026-08-10'
+  url: https://help.flashos.com/support/solutions/articles/60001647089-flash-parcs-version-4-0-12-0
+  breaking: false
+  api_affecting: true
+  highlights:
+  - Customer Service API Ticket Search now accepts External ID as a searchable parameter
+  - Enterprise SSO for Flash PARCS admin portal non-Valet roles
+  - Revenue reports extended to the Tender Retail payment gateway
+  - Fixes to monthly account status transitions, Monthly Pool calculation and Validation
+    Portal time zones
+- version: Core Platform 08.07.26
+  date: '2026-08-07'
+  url: https://help.flashos.com/support/solutions/articles/60001647088-core-platform-08-07-26
+  breaking: false
+  highlights:
+  - Universal redirect links from Parkonect Garage Logs to ParkWhiz bookings
+  - New garage-level "Require Open Network Opt-In" control for Express Pay
+  - Private-network vehicle support for Parkonect Edge offline processing
+  - LPR event deduplication for sessions with repeatedly used scan codes
+- version: Digital Release 08.07.26
+  date: '2026-08-07'
+  url: https://help.flashos.com/support/solutions/articles/60001647090-digital-release-08-07-26
+  breaking: false
+  highlights:
+  - Simplified Express Pay checkout
+  - Live pricing and availability markers on Google Maps search results
+  - ParkWhiz Seller Console event-rate and required-plate controls
+  - ParkWhiz iOS extend-session and Android booking-sort improvements
+- version: Core Platform 07.24.26
+  date: '2026-07-24'
+  url: https://help.flashos.com/support/solutions/articles/60001646843-core-platform-07-24-26
+  breaking: false
+- version: Digital Release 07.24.26
+  date: '2026-07-24'
+  url: https://help.flashos.com/support/solutions/articles/60001646844-digital-release-07-24-26
+  breaking: false
+- version: Flash PARCS 4.0.11.0
+  date: '2026-07'
+  url: https://help.flashos.com/support/solutions/articles/60001646785-flash-parcs-version-4-0-11-0
+  breaking: false
+  note: deployment date not captured in this pass; article carries it
+- version: Core Platform 07.10.26
+  date: '2026-07-10'
+  url: https://help.flashos.com/support/solutions/articles/60001646462-core-platform-07-10-26
+  breaking: false
+- version: Digital Release 07.10.26
+  date: '2026-07-10'
+  url: https://help.flashos.com/support/solutions/articles/60001646461-digital-release-07-10-26
+  breaking: false
+- version: Core Platform 06.26.26
+  date: '2026-06-26'
+  url: https://help.flashos.com/support/solutions/articles/60001646209-core-platform-06-26-26
+  breaking: false
+- version: Digital Release 06.26.26
+  date: '2026-06-26'
+  url: https://help.flashos.com/support/solutions/articles/60001646208-digital-release-06-26-26
+  breaking: false
+note: >-
+  Recent window only. Flash publishes no separate API changelog, no deprecation
+  notices and no Sunset/Deprecation header policy for its partner APIs; API changes
+  such as the 4.0.12.0 Customer Service API parameter addition are announced inline
+  in the product release notes.

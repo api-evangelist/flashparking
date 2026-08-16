@@ -1,0 +1,26 @@
+generated: '2026-08-16'
+method: searched
+source: npm registry search, PyPI, and the github.com/FlashParking-Inc organization
+package_count: 0
+packages: []
+registries_checked:
+- registry: npm
+  query: flashparking, flashos
+  result: no packages published under either name or any Flash-owned scope
+  status: 200
+- registry: pypi
+  query: flashparking
+  result: 404 - no project
+  status: 404
+- registry: github
+  query: https://github.com/FlashParking-Inc
+  result: >-
+    6 public repositories, none of them a client library for a Flash API. They are
+    utilities and forks - json-language-file-translator, a fork of dynamodb-geo.js, a
+    serverless-offline Step Functions plugin, a serverless S3 replication plugin, a
+    fork of Looker's sdk-codegen, and an exam repo.
+  status: 200
+note: >-
+  Flash ships no first-party SDK in any language for its partner APIs, and there is no
+  SDK/CLI/SourceCode link in the documentation to derive a candidate from. No SDKs
+  pointer is emitted. package_count 0 is a measured absence.

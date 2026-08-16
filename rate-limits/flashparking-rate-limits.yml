@@ -1,0 +1,20 @@
+generated: '2026-08-16'
+method: searched
+source: https://help.flashos.com/support/solutions/articles/60001639636-api-integrations-with-flash-parcs-and-flash-valet
+limit_count: 0
+limits: []
+headers: []
+exhaustion_status: null
+note: >-
+  Flash publishes no rate limits for its partner APIs. The single public API article
+  describes what each of the nine APIs does but names no quotas, no windows, no burst
+  allowances, no RateLimit-*/X-RateLimit-*/Retry-After response headers and no 429
+  behaviour. Because there is no base URL and no anonymous endpoint, limits could not
+  be observed live either. Any limits are presumed to be set in the partner contract
+  arranged through sales@flashparking.com. limit_count 0 is a measured absence, not a
+  skipped check.
+evidence:
+- url: https://help.flashos.com/support/solutions/articles/60001639636-api-integrations-with-flash-parcs-and-flash-valet
+  status: 200
+- url: https://www.flashparking.com/pricing/
+  status: 200

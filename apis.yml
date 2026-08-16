@@ -1,23 +1,148 @@
 aid: flashparking
 name: Flashparking
-description: 'Flashparking is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Flash (formerly FlashParking) is an Austin, Texas parking technology
+  company that sells an end-to-end mobility platform to parking asset owners and
+  operators: cloud software (FlashOS), purpose-built PARCS gate and kiosk hardware,
+  Flash Vision LPR/computer-vision cameras, valet and enforcement applications, EV
+  charging, accounts-receivable automation, and a consumer Demand Network reached
+  through its ParkWhiz/Arrive brands. Flash publishes a named catalog of nine
+  partner APIs for Flash PARCS and Flash Valet - eParking, Locations, Monthly,
+  Validations, Customer Service, Price Manager, FlashPass, Vehicle Request and Flash
+  Receipt - used by partners including Ticketmaster, SpotHero, LAZ Parking, Genea and
+  Daktronics. Those APIs are commercially gated: the help center documents what each
+  API does but publishes no base URL, no authentication model and no machine-readable
+  specification, and sandbox certification plus production access carry monthly fees
+  arranged through sales@flashparking.com.'
 url: https://raw.githubusercontent.com/api-evangelist/flashparking/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+image: https://www.flashparking.com/wp-content/uploads/flash-fallback.jpg
 specificationVersion: '0.20'
 created: '2026-08-16'
 modified: '2026-08-16'
 tags:
 - Company
-apis: []
+- Parking
+- Mobility
+- Transportation
+- Payments
+- Internet of Things
+- Computer Vision
+- Real Estate
+- Electric Vehicle Charging
+- Reservations
+apis:
+- aid: flashparking:flash-platform-apis
+  name: Flash Platform Partner APIs
+  description: 'The nine partner APIs Flash publishes for Flash PARCS and Flash Valet:
+    eParking (inject and manage parking reservations), Locations (real-time occupancy,
+    garage status and active pricing), Monthly (monthly parker lifecycle), Validations
+    (search validations and apply discounts), Customer Service (call-center ticket
+    search, gate vending, refunds, video call a lane), Price Manager (check, adjust
+    and schedule parking rates), FlashPass (purchase and manage passes), Vehicle
+    Request (submit valet retrieval requests) and Flash Receipt (pull transaction
+    receipts). Documented by capability only - Flash publishes no base URL, no
+    authentication model and no OpenAPI/Swagger definition; sandbox certification and
+    production access are sold through sales@flashparking.com.'
+  humanURL: https://help.flashos.com/support/solutions/articles/60001639636-api-integrations-with-flash-parcs-and-flash-valet
+  tags:
+  - Parking
+  - Reservations
+  - Payments
+  - Valet
+  properties:
+  - type: APIReference
+    url: https://help.flashos.com/support/solutions/articles/60001639636-api-integrations-with-flash-parcs-and-flash-valet
+  - type: Documentation
+    url: https://help.flashos.com/support/home
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/flashparking-domain-security.yml
 - type: Website
-  url: https://www.hiive.com/securities/flashparking-stock
+  url: https://www.flashparking.com/
+- type: Documentation
+  url: https://help.flashos.com/support/home
+- type: APIReference
+  url: https://help.flashos.com/support/solutions/articles/60001639636-api-integrations-with-flash-parcs-and-flash-valet
+- type: Support
+  url: https://help.flashos.com/support/tickets/new
+- type: Blog
+  url: https://www.flashparking.com/blog/
+- type: BlogRSS
+  url: https://www.flashparking.com/feed/
+- type: GitHubOrganization
+  url: https://github.com/FlashParking-Inc
+- type: Pricing
+  url: https://www.flashparking.com/pricing/
+- type: SignUp
+  url: https://www.flashparking.com/get-started/
+- type: Login
+  url: https://www.flashparking.com/sign-in/
+- type: TermsOfService
+  url: https://www.flashparking.com/legal/terms-and-conditions/
+- type: PrivacyPolicy
+  url: https://www.flashparking.com/legal/privacy-policy/
+- type: StatusPage
+  url: https://status.flashparking.com/
+- type: ChangeLog
+  url: https://help.flashos.com/support/solutions/60000334952
+- type: Compliance
+  url: https://www.flashparking.com/news-press/flashparkings-innovative-system-passes-annual-pci-dss-compliance-audit/
+- type: ChangeLog
+  name: Flash product release notes (structured)
+  url: changelog/flashparking-changelog.yml
+- type: Lifecycle
+  url: lifecycle/flashparking-lifecycle.yml
+- type: Conformance
+  url: conformance/flashparking-conformance.yml
+- type: Sandbox
+  url: sandbox/flashparking-sandbox.yml
+- type: LLMsTxt
+  url: llms/flashparking-llms.txt
+x-artifacts-without-pointers:
+  note: >-
+    These artifacts exist in the repo but deliberately carry NO common[] pointer,
+    because each records a measured ABSENCE and a pointer would assert the provider
+    serves a surface it does not.
+  files:
+  - path: well-known/flashparking-well-known.yml
+    reason: every /.well-known/ path 404s on Flash-controlled hosts; the one 200 is
+      Atlassian's security.txt on the vendor-hosted status page, not Flash's
+  - path: rate-limits/flashparking-rate-limits.yml
+    reason: limit_count 0 - no published limits, no headers, no observable endpoint
+  - path: packages/flashparking-packages.yml
+    reason: package_count 0 - no first-party SDK in any registry
+  - path: plans/flashparking-plans-pricing.yml
+    reason: plan_count 0 - three pricing models named, no tiers, prices or quotas published
+x-enrichment:
+  date: '2026-08-16'
+  status: minimal
+  artifacts_added: 9
+  pass: local-v1
+x-coverage:
+  state: gated
+  reason: sales-gate
+  detail: >-
+    Flash names nine partner APIs in a single Freshdesk help-center article but
+    publishes no base URL, no authentication model and no specification for any of
+    them - the article ends at "contact sales@flashparking.com for pricing", and
+    sandbox certification plus production access are sold as a paid monthly add-on.
+  evidence:
+  - url: https://help.flashos.com/support/solutions/articles/60001639636-api-integrations-with-flash-parcs-and-flash-valet
+    status: 200
+  - url: https://developer.flashparking.com/
+    status: 0
+  - url: https://api.flashparking.com/
+    status: 0
+  - url: https://www.flashparking.com/openapi.json
+    status: 404
+  - url: https://www.flashparking.com/developers/
+    status: 404
+  - url: https://www.flashparking.com/.well-known/agent-card.json
+    status: 404
+  checked: '2026-08-16'

@@ -42,5 +42,26 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Flashparking is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.hiive.com/securities/flashparking-stock
+Flash (formerly FlashParking) is an Austin, Texas parking technology company selling an
+end-to-end mobility platform to parking asset owners and operators: FlashOS cloud software,
+PARCS gate and kiosk hardware, Flash Vision LPR cameras, valet and enforcement applications,
+EV charging, accounts-receivable automation, and a consumer Demand Network reached through its
+ParkWhiz/Arrive brands.
+
+Flash names nine partner APIs for Flash PARCS and Flash Valet — eParking, Locations, Monthly,
+Validations, Customer Service, Price Manager, FlashPass, Vehicle Request and Flash Receipt —
+used by partners including Ticketmaster, SpotHero, LAZ Parking, Genea and Daktronics. Those
+APIs are documented by capability only: Flash publishes no base URL, no authentication model
+and no machine-readable specification, and sandbox certification plus production access are
+sold through sales@flashparking.com. That is why this profile is recorded as
+`x-coverage: gated / sales-gate`.
+
+- Website — https://www.flashparking.com/
+- Knowledge base — https://help.flashos.com/support/home
+- API reference (capability-level) — https://help.flashos.com/support/solutions/articles/60001639636-api-integrations-with-flash-parcs-and-flash-valet
+- Product release notes — https://help.flashos.com/support/solutions/60000334952
+- Status page — https://status.flashparking.com/
+- Pricing — https://www.flashparking.com/pricing/
+
+ParkWhiz / Arrive, which merged with Flash in 2021, is profiled separately and does publish a
+documented (partner-gated) v4 REST API.

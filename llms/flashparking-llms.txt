@@ -1,0 +1,75 @@
+# Flash (FlashParking)
+
+> Flash is an Austin, Texas parking technology company selling an end-to-end mobility
+> platform to parking asset owners and operators: FlashOS cloud software, PARCS gate
+> and kiosk hardware, Flash Vision LPR cameras, valet and enforcement applications, EV
+> charging, accounts-receivable automation, and a consumer Demand Network reached
+> through its ParkWhiz/Arrive brands. Flash names nine partner APIs for Flash PARCS and
+> Flash Valet, but publishes no base URL, no authentication model and no
+> machine-readable specification for any of them; sandbox certification and production
+> access are sold through sales@flashparking.com.
+
+## Status of the API surface
+
+- Machine-readable contract: NONE published. No OpenAPI, Swagger, GraphQL SDL,
+  AsyncAPI, MCP server or A2A agent card was found on any Flash-controlled host as of
+  2026-08-16.
+- Access: commercially gated. Sandbox certification then paid production access,
+  arranged with sales@flashparking.com.
+- What IS published: a capability-level catalog of the nine APIs, dated product
+  release notes, an Atlassian Statuspage, and named compliance certifications.
+
+## APIs (documented by capability only)
+
+- [eParking API](https://help.flashos.com/support/solutions/articles/60001639636-api-integrations-with-flash-parcs-and-flash-valet): inject, create, update and manage parking reservations in Flash PARCS and Flash Valet. Used by Ticketmaster, Tickets.com, SpotHero, LAZ Parking.
+- [Locations API](https://help.flashos.com/support/solutions/articles/60001639636-api-integrations-with-flash-parcs-and-flash-valet): real-time facility occupancy, garage status (open/full/closed) and current active pricing, for signage, guidance systems and apps. Used by Daktronics, InfoTraffic, A LOT Media, Kode Labs, City of Las Vegas.
+- [Monthly API](https://help.flashos.com/support/solutions/articles/60001639636-api-integrations-with-flash-parcs-and-flash-valet): create, update, edit and manage monthly parkers across their full lifecycle. Used by Paris, Zephire, Genea, AIMS, OpenPath.
+- [Validations API](https://help.flashos.com/support/solutions/articles/60001639636-api-integrations-with-flash-parcs-and-flash-valet): search validations and redeem discounts in real time. Used by Westfield Century, Gator, TF Green Airport, Switch EV, Thanks Again.
+- [Customer Service API](https://help.flashos.com/support/solutions/articles/60001639636-api-integrations-with-flash-parcs-and-flash-valet): call-center integration - ticket search (including by External ID as of Flash PARCS 4.0.12.0), vend gates, open and close support calls, video call a lane, process refunds, leave notes. Used by HelpMeParker, Umojo, ProPark.
+- [Price Manager API](https://help.flashos.com/support/solutions/articles/60001639636-api-integrations-with-flash-parcs-and-flash-valet): check current rates, make real-time rate adjustments, schedule future rate changes. Used by SpotHero, infoTraffic.
+- [FlashPass API](https://help.flashos.com/support/solutions/articles/60001639636-api-integrations-with-flash-parcs-and-flash-valet): purchase and manage FlashPasses for recurring visitors.
+- [Vehicle Request API](https://help.flashos.com/support/solutions/articles/60001639636-api-integrations-with-flash-parcs-and-flash-valet): submit vehicle retrieval requests to valet staff.
+- [Flash Receipt API](https://help.flashos.com/support/solutions/articles/60001639636-api-integrations-with-flash-parcs-and-flash-valet): pull receipts for parking transactions.
+
+## Docs
+
+- [Knowledge base](https://help.flashos.com/support/home): the whole public documentation surface, a Freshdesk help center.
+- [API integrations with Flash PARCS and Flash Valet](https://help.flashos.com/support/solutions/articles/60001639636-api-integrations-with-flash-parcs-and-flash-valet): the only API reference.
+- [Product release notes](https://help.flashos.com/support/solutions/60000334952): dated release trains for PARCS, Valet, Parkonect, Digital, Vision, Enforcement and Core Platform.
+- [Submit a ticket](https://help.flashos.com/support/tickets/new)
+
+## Operations
+
+- [Status page](https://status.flashparking.com/) - Atlassian Statuspage; JSON at /api/v2/summary.json, Atom at /history.atom, RSS at /history.rss.
+- [PCI DSS Level 1 Service Provider](https://www.flashparking.com/news-press/flashparkings-innovative-system-passes-annual-pci-dss-compliance-audit/)
+- [HITRUST CSF certification](https://www.flashparking.com/press-release/flash-renews-hitrust-certification/)
+- [Automated License Plate Recognition policy](https://www.flashparking.com/legal/automated-license-plate-recognition-policy/)
+
+## Commercial
+
+- [Pricing](https://www.flashparking.com/pricing/) - three named models (HaaS, Transactional, One-time payment); no prices published.
+- [Get started / contact sales](https://www.flashparking.com/get-started/)
+- [Sign in](https://www.flashparking.com/sign-in/)
+- [Terms and conditions](https://www.flashparking.com/legal/terms-and-conditions/)
+- [Privacy policy](https://www.flashparking.com/legal/privacy-policy/)
+
+## API Evangelist artifacts
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/flashparking/refs/heads/main/apis.yml)
+- [Changelog](https://raw.githubusercontent.com/api-evangelist/flashparking/refs/heads/main/changelog/flashparking-changelog.yml)
+- [Lifecycle](https://raw.githubusercontent.com/api-evangelist/flashparking/refs/heads/main/lifecycle/flashparking-lifecycle.yml)
+- [Conformance](https://raw.githubusercontent.com/api-evangelist/flashparking/refs/heads/main/conformance/flashparking-conformance.yml)
+- [Sandbox](https://raw.githubusercontent.com/api-evangelist/flashparking/refs/heads/main/sandbox/flashparking-sandbox.yml)
+- [Plans and pricing](https://raw.githubusercontent.com/api-evangelist/flashparking/refs/heads/main/plans/flashparking-plans-pricing.yml)
+- [Rate limits](https://raw.githubusercontent.com/api-evangelist/flashparking/refs/heads/main/rate-limits/flashparking-rate-limits.yml)
+- [Domain security](https://raw.githubusercontent.com/api-evangelist/flashparking/refs/heads/main/security/flashparking-domain-security.yml)
+- [Well-known probe](https://raw.githubusercontent.com/api-evangelist/flashparking/refs/heads/main/well-known/flashparking-well-known.yml)
+- [Packages](https://raw.githubusercontent.com/api-evangelist/flashparking/refs/heads/main/packages/flashparking-packages.yml)
+
+## Notes
+
+Generated by the API Evangelist enrichment pipeline on 2026-08-16 from Flash's own
+public surface. This is an independent third-party profile; API Evangelist does not
+operate or resell Flash's APIs. ParkWhiz/Arrive, which Flash merged with in 2021, is
+profiled separately at https://apis.io/provider/parkwhiz/ and does publish a
+documented (partner-gated) v4 REST API.

@@ -1,0 +1,67 @@
+generated: '2026-08-16'
+method: searched
+source: https://www.flashparking.com/news-press/flashparkings-innovative-system-passes-annual-pci-dss-compliance-audit/
+note: >-
+  Flash publishes no machine-readable API contract, so nothing here is derived from a
+  specification. Every entry below is either a compliance program Flash states on its
+  own site, or a standard recorded as NOT evidenced because no public artifact exists
+  to evidence it. Absence here means "not published", not "not implemented".
+standards:
+- id: pci-dss
+  conforms: true
+  level: Level 1 Service Provider
+  evidence: >-
+    Flash publishes annual renewal of its PCI DSS Level 1 Service Provider
+    designation, the highest PCI compliance level, held for 12 consecutive years.
+  source: https://www.flashparking.com/news-press/flashparkings-innovative-system-passes-annual-pci-dss-compliance-audit/
+- id: hitrust-csf
+  conforms: true
+  evidence: >-
+    Flash publishes renewal of its HITRUST Common Security Framework certification,
+    which it describes as a first in parking technology; HITRUST CSF harmonizes 60+
+    frameworks including HIPAA, ISO and NIST.
+  source: https://www.flashparking.com/press-release/flash-renews-hitrust-certification/
+- id: soc2
+  conforms: null
+  evidence: No public SOC 2 claim found on any Flash surface.
+- id: iso-27001
+  conforms: null
+  evidence: No public ISO 27001 claim found on any Flash surface.
+- id: oauth2
+  conforms: null
+  evidence: >-
+    Authentication model for the partner APIs is not documented publicly; no OAuth
+    metadata served at /.well-known/oauth-authorization-server on any Flash host.
+- id: oidc
+  conforms: null
+  evidence: >-
+    Enterprise SSO (SAML/OIDC) exists for Flash admin portals per the Platform release
+    notes, but no public OIDC discovery document is served
+    (/.well-known/openid-configuration 404 on every Flash host).
+  source: https://help.flashos.com/support/solutions/articles/60001646389-platform-enterprise-sso-single-sign-on-
+- id: rfc9457-problem-details
+  conforms: null
+  evidence: No error format published.
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: >-
+    /.well-known/security.txt returns 404 on flashparking.com and flashos.com. The
+    only 200 observed is Atlassian's document on the vendor-hosted Statuspage host and
+    is not Flash's.
+- id: rfc8594-sunset
+  conforms: null
+  evidence: No deprecation or sunset policy published.
+- id: openapi
+  conforms: false
+  evidence: >-
+    No OpenAPI/Swagger document found at any probed location on flashparking.com,
+    flashos.com or the help-center host.
+regulatory_context:
+  - id: alpr
+    note: >-
+      Flash publishes an Automated License Plate Recognition policy governing the
+      plate data its Vision products capture.
+    url: https://www.flashparking.com/legal/automated-license-plate-recognition-policy/
+  - id: ccpa
+    note: Flash publishes a Do Not Sell or Share My Personal Information notice.
+    url: https://www.flashparking.com/do-not-sell-or-share/

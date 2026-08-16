@@ -1,0 +1,51 @@
+generated: '2026-08-16'
+method: searched
+source: https://status.flashparking.com/
+versioning:
+  scheme: per-product
+  detail: >-
+    No API version is published. Flash versions PRODUCTS, not its partner APIs:
+    installed products carry dotted versions (Flash PARCS 4.0.12.0, Flash Valet
+    4.0.11.12, Parkonect Firmware 4.15.00) and hosted products are released by
+    deployment date (Digital / Core Platform, roughly biweekly). The nine partner
+    APIs are documented by capability only, with no version identifier, no base URL
+    and no version-in-path or version-header convention on record.
+  docs: https://help.flashos.com/support/solutions/60000334952
+deprecation:
+  policy_url: null
+  sunset_header: null
+  note: >-
+    No deprecation policy, sunset schedule or RFC 8594 Sunset/Deprecation header
+    support found on any public Flash surface. No Deprecation pointer is emitted.
+sla:
+  url: null
+  uptime_target: null
+  note: >-
+    No public SLA or uptime target. Terms are at
+    https://www.flashparking.com/legal/terms-and-conditions/ and commercial terms are
+    negotiated through sales.
+status_page:
+  url: https://status.flashparking.com/
+  platform: Atlassian Statuspage
+  page_id: pv5pjyhhrn04
+  api: https://status.flashparking.com/api/v2/summary.json
+  feeds:
+  - https://status.flashparking.com/history.atom
+  - https://status.flashparking.com/history.rss
+  components:
+  - FlashValet
+  - FlashPARCS
+  - FlashAR
+  - Admin Portal
+  - Advanced Customer Support Portal
+  - Validation Portal
+  - Reporting
+  - Flash Vision Portal
+  - Flash Vision Cameras
+  - Parkonect PARCS
+  - OmniPark
+  evidence:
+    url: https://status.flashparking.com/api/v2/summary.json
+    http_status: 200
+    fetched: '2026-08-16'
+deprecated_operations: []

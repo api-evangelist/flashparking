@@ -1,0 +1,115 @@
+generated: '2026-08-16'
+method: probed
+source: live GET of /.well-known/* on every Flash-controlled host reachable from apis.yml
+note: >-
+  Every /.well-known/ path probed on the hosts Flash controls returned 404 (or an
+  authentication redirect). No WellKnown or SecurityTxt pointer is emitted for this
+  provider: this file records a measured ABSENCE, not a served discovery surface.
+  The one 200 observed - a signed RFC 9116 security.txt at status.flashparking.com -
+  is Atlassian's document, not Flash's: its Canonical field is
+  https://www.atlassian.com/.well-known/security.txt and its contacts are
+  security@atlassian.com, because status.flashparking.com is a vendor-hosted
+  Atlassian Statuspage. It is recorded here as vendor infrastructure and is
+  deliberately NOT credited to Flash.
+hosts:
+- host: https://www.flashparking.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+    note: redirect to site 404 handler, no document served
+  - path: /.well-known/oauth-protected-resource
+    status: 301
+    note: redirect to site 404 handler, no document served
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://help.flashos.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://payments.flashos.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://portal.flashos.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://vision.flashos.com
+  note: >-
+    Auth0-style gate; every path (including every /.well-known/ path) answers 307 to
+    /login?returnTo=... so no probe can distinguish a served document from the catch-all.
+  documents:
+  - path: /.well-known/security.txt
+    status: 307
+  - path: /.well-known/openid-configuration
+    status: 307
+  - path: /.well-known/oauth-authorization-server
+    status: 307
+  - path: /.well-known/agent-card.json
+    status: 307
+  - path: /.well-known/agent.json
+    status: 307
+- host: https://status.flashparking.com
+  vendor: Atlassian Statuspage
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    owner: atlassian.com
+    canonical: https://www.atlassian.com/.well-known/security.txt
+    note: >-
+      Vendor document served by the Statuspage platform, NOT published by Flash.
+      Not saved to disk and not wired as a SecurityTxt/Security pointer.
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404

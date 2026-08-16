@@ -1,0 +1,31 @@
+generated: '2026-08-16'
+method: searched
+source: https://help.flashos.com/support/solutions/articles/60001639636-api-integrations-with-flash-parcs-and-flash-valet
+available: true
+self_serve: false
+access: gated
+summary: >-
+  Flash states in its own API documentation that it provides sandbox environments for
+  testing and certification of the Flash PARCS and Flash Valet partner APIs. Access is
+  not self-serve: a partner is certified against the sandbox and then pays monthly
+  fees for production API access, arranged through sales@flashparking.com. No sandbox
+  hostname, credential format, test data set or certification checklist is published.
+quoted: >-
+  "Flash provides sandbox environments for testing and certification purposes, with
+  monthly fees associated with accessing production APIs."
+test_live_separation:
+  documented: false
+  note: No test-vs-live key prefixes, modes or environment identifiers are published.
+test_values: []
+test_clocks: null
+fixtures: null
+request_access:
+  contact: sales@flashparking.com
+  url: https://www.flashparking.com/get-started/
+note: >-
+  NO FABRICATION - no sandbox URL, credential or magic test value is recorded because
+  Flash publishes none. This artifact records that a sandbox program exists and that
+  it is commercially gated.
+evidence:
+- url: https://help.flashos.com/support/solutions/articles/60001639636-api-integrations-with-flash-parcs-and-flash-valet
+  status: 200
