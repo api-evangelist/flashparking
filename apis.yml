@@ -17,7 +17,7 @@ url: https://raw.githubusercontent.com/api-evangelist/flashparking/refs/heads/ma
 x-type: company
 x-source: harvest:secondary-market
 image: https://www.flashparking.com/wp-content/uploads/flash-fallback.jpg
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-08-16'
 modified: '2026-08-16'
 tags:
