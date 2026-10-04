@@ -1,30 +1,28 @@
-# Kin Score artifact — flashparking — 2026-09-01T222808
+# Kin Score artifact — flashparking — 2026-09-25T232841
 # The API Evangelist rating (https://github.com/api-evangelist/kin-score). Generated; do not edit.
 ---
 kin_score:
   slug: flashparking
-  schema_version: 0.18.0
-  scored_at: '2026-09-01'
-  run_ts: 2026-09-01T222808
-  composite: 32.6
+  schema_version: 0.23.0
+  scored_at: '2026-09-25'
+  run_ts: 2026-09-25T232841
+  composite: 30.8
   band: thin
   facets:
     discoverability: 66.7
     contract_quality: 0.0
-    governance: 18.2
+    contract_governance: 18.2
     operational_transparency: 34.2
     developer_ergonomics: 31.0
-    commercial_clarity: 52.6
-    contract_governance: 18.2
     access_clarity: 52.6
   agent_readiness:
-    score: 2.5
+    score: 4.7
     band: human-only
     dimensions:
       spec_presence: false
       agentic_access: false
       reversibility_documented: false
-      mcp_server: false
+      mcp_server: platform
       auth_clarity: false
       idempotency: false
       error_semantics: false
@@ -42,9 +40,10 @@ kin_score:
       agentic_commerce: false
   regulatory:
     applies: true
-    regime: Payments
-    regime_id: payments
-    score: 50.0
+    regime: Energy & Utilities
+    regime_id: energy_utilities
+    score: 18.5
     matched_via: tags
   provenance:
+    mcp: site-plugin
     conformance: first-party
