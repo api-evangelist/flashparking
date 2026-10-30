@@ -64,26 +64,115 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Flash (formerly FlashParking) is an Austin, Texas parking technology company selling an
-end-to-end mobility platform to parking asset owners and operators: FlashOS cloud software,
-PARCS gate and kiosk hardware, Flash Vision LPR cameras, valet and enforcement applications,
-EV charging, accounts-receivable automation, and a consumer Demand Network reached through its
-ParkWhiz/Arrive brands.
+Flash (formerly FlashParking) is an Austin, Texas parking technology company that sells an end-to-end mobility platform to parking asset owners and operators: cloud software (FlashOS), purpose-built PARCS gate and kiosk hardware, Flash Vision LPR/computer-vision cameras, valet and enforcement applications, EV charging, accounts-receivable automation, and a consumer Demand Network reached through its ParkWhiz/Arrive brands. Flash publishes a named catalog of nine partner APIs for Flash PARCS and Flash Valet - eParking, Locations, Monthly, Validations, Customer Service, Price Manager, FlashPass, Vehicle Request and Flash Receipt - used by partners including Ticketmaster, SpotHero, LAZ Parking, Genea and Daktronics. Those APIs are commercially gated: the help center documents what each API does but publishes no base URL, no authentication model and no machine-readable specification, and sandbox certification plus production access carry monthly fees arranged through sales@flashparking.com.
 
-Flash names nine partner APIs for Flash PARCS and Flash Valet — eParking, Locations, Monthly,
-Validations, Customer Service, Price Manager, FlashPass, Vehicle Request and Flash Receipt —
-used by partners including Ticketmaster, SpotHero, LAZ Parking, Genea and Daktronics. Those
-APIs are documented by capability only: Flash publishes no base URL, no authentication model
-and no machine-readable specification, and sandbox certification plus production access are
-sold through sales@flashparking.com. That is why this profile is recorded as
-`x-coverage: gated / sales-gate`.
+**Areas:** Company · Parking · Mobility · Transportation · Payments · IoT · Computer Vision · Real Estate · EV Charging · Reservations
 
-- Website — https://www.flashparking.com/
-- Knowledge base — https://help.flashos.com/support/home
-- API reference (capability-level) — https://help.flashos.com/support/solutions/articles/60001639636-api-integrations-with-flash-parcs-and-flash-valet
-- Product release notes — https://help.flashos.com/support/solutions/60000334952
-- Status page — https://status.flashparking.com/
-- Pricing — https://www.flashparking.com/pricing/
+## Flashparking on APIs.io
 
-ParkWhiz / Arrive, which merged with Flash in 2021, is profiled separately and does publish a
-documented (partner-gated) v4 REST API.
+Everything profiled for Flashparking is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/flashparking/](https://apis.io/providers/flashparking/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Flash Platform Partner APIs](https://apis.io/apis/flashparking/flash-platform-apis/) — The nine partner APIs Flash publishes for Flash PARCS and Flash Valet: eParking (inject and manage parking reservations), Locations (real-time occupancy,…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [Moved to /providers/flashparking/](https://apis.io/servers/flashparking/flashparking/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Flashparking Domain Security](https://apis.io/security/flashparking/flashparking-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Flashparking Plans Pricing](https://apis.io/plans/flashparking/flashparking-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Flashparking Rate Limits](https://apis.io/rate-limits/flashparking/flashparking-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.flashparking.com/)
+- [Documentation](https://help.flashos.com/support/home)
+- [API reference](https://help.flashos.com/support/solutions/articles/60001639636-api-integrations-with-flash-parcs-and-flash-valet)
+- [Pricing](https://www.flashparking.com/pricing/)
+- [Sign up](https://www.flashparking.com/get-started/)
+- [Support](https://help.flashos.com/support/tickets/new)
+- [Changelog](https://help.flashos.com/support/solutions/60000334952)
+- [Blog](https://www.flashparking.com/media-center/)
+- [Compliance](https://www.flashparking.com/news-press/flashparkings-innovative-system-passes-annual-pci-dss-compliance-audit/)
+- [Terms of service](https://www.flashparking.com/legal/terms-and-conditions/)
+- [Privacy policy](https://www.flashparking.com/legal/privacy-policy/)
+- [GitHub](https://github.com/FlashParking-Inc)
+- [Status](https://status.flashparking.com/)
+
+## API Evangelist rating
+
+**Kin Score 30.8** — thin · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.7 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 34.2 |
+| Developer ergonomics | 31.0 |
+| Access clarity | 52.6 |
+
+**Agent readiness 4.7** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | platform (partial credit) |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 18.5** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/flashparking/](https://apis.io/providers/flashparking/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Flashparking: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/flashparking/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
